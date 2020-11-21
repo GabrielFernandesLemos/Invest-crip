@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/firstMenu"
+        android:title="Principais"
+        android:icon="@drawable/ic_money"/>
+
+    <item android:id="@+id/secondMenu"
+        android:title="Cadastro"
+        android:icon="@drawable/ic_save"/>
+
+    <item android:id="@+id/thirdMenu"
+        android:title="Relatórios"
+        android:icon="@drawable/ic_reports"/>
+
+</menu>
