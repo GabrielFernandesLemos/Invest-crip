@@ -9,8 +9,8 @@
         android:title="Cadastro"
         android:icon="@drawable/ic_save"/>
 
-    <item android:id="@+id/thirdMenu"
+    <!--<item android:id="@+id/thirdMenu"
         android:title="Relatórios"
-        android:icon="@drawable/ic_reports"/>
+        android:icon="@drawable/ic_reports"/>-->
 
 </menu>
