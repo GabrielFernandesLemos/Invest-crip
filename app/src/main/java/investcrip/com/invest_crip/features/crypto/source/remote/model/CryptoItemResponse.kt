@@ -48,8 +48,6 @@ data class CryptoItemResponse(
         val priceChange24h: String?,
         @SerializedName("price_change_percentage_24h")
         val priceChangePercentage24h: String?,
-        @SerializedName("roi")
-        val roi: String?,
         @SerializedName("symbol")
         val symbol: String?,
         @SerializedName("total_supply")
