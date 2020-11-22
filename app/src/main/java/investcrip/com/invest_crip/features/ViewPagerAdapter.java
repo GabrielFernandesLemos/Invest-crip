@@ -6,7 +6,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.lifecycle.Lifecycle;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 
-import investcrip.com.invest_crip.features.crypto.CryptoListFragment;
+import investcrip.com.invest_crip.features.crypto.presentation.CryptoListFragment;
 import investcrip.com.invest_crip.features.register.RegisterFragment;
 
 public class ViewPagerAdapter extends FragmentStateAdapter {
@@ -38,6 +38,6 @@ public class ViewPagerAdapter extends FragmentStateAdapter {
 
     @Override
     public int getItemCount() {
-        return 3;
+        return 2;
     }
 }

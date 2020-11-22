@@ -1,4 +1,4 @@
-package investcrip.com.invest_crip.features.crypto;
+package investcrip.com.invest_crip.features.crypto.presentation;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -26,7 +26,6 @@ public class CryptoListFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
 
     }
 }
