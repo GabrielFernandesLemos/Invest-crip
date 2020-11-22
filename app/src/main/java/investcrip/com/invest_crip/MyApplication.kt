@@ -1,6 +1,8 @@
 package investcrip.com.invest_crip
 
 import android.app.Application
+import android.content.Context
+import androidx.multidex.MultiDex
 import investcrip.com.invest_crip.features.crypto.di.cryptoModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
@@ -14,5 +16,10 @@ class MyApplication : Application() {
             androidContext(this@MyApplication)
             modules(listOf(cryptoModule))
         }
+    }
+
+    override fun attachBaseContext(base: Context?) {
+        super.attachBaseContext(base)
+        MultiDex.install(this)
     }
 }

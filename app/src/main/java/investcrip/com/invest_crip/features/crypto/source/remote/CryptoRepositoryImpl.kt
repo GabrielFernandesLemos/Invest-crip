@@ -1,6 +1,7 @@
 package investcrip.com.invest_crip.features.crypto.source.remote
 
 import investcrip.com.invest_crip.features.crypto.presentation.entity.Crypto
+import java.math.BigDecimal
 
 class CryptoRepositoryImpl(
         private val dataSource: CryptoRemoteDataSource
@@ -9,10 +10,10 @@ class CryptoRepositoryImpl(
             dataSource.get()
                     .map { response ->
                         Crypto(
-                                currentPrice = response.currentPrice.orZero(),
+                                currentPrice = BigDecimal(response.currentPrice.orZero()),
                                 cryptoName = response.name.orEmpty(),
-                                maxPriceDay = response.high24h.orZero(),
-                                minPriceDay = response.low24h.orZero(),
+                                maxPriceDay = BigDecimal(response.high24h.orZero()),
+                                minPriceDay = BigDecimal(response.low24h.orZero()),
                                 urlLogo = response.image.orEmpty()
                         )
                     }

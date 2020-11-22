@@ -14,5 +14,5 @@ abstract class BaseAdapter<T, VH : BaseViewHolder<T>>(callback: DiffUtil.ItemCal
 }
 
 abstract class BaseViewHolder<T>(itemView: View) : RecyclerView.ViewHolder(itemView) {
-    abstract fun bindData(item: T?)
+    abstract fun bindData(item: T)
 }
