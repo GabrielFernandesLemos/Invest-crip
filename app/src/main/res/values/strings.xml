@@ -1,3 +1,27 @@
 <resources>
-    <string name="app_name">invest_crip</string>
+    <string name="app_name">invest Crip</string>
+    <string name="enteredValues">Favor preencher todos os campos</string>
+    <string name="realyDelete">Confirmar exclusão</string>
+    <string name="deleteCustomerMsg">\"Deseja excluir o cliente: \"</string>
+    <string name="typeBalance">Digite o saldo da conta</string>
+    <string name="typePhoneNumber">Digite seu número de telefone</string>
+    <string name="typeBirthday">Selecione sua data de nascimento</string>
+    <string name="typeCpf">Digite seu CPF</string>
+    <string name="typeEmail">Digite seu Email</string>
+    <string name="typeName">Digite seu Nome</string>
+    <string name="txtBitcoin">Bitcoin</string>
+    <string name="txtBalance">US$16,648.62</string>
+    <string name="txtMax">MAX</string>
+    <string name="txtMaxPerc">+1,56%</string>
+    <string name="txtMinPerc">-0,59%</string>
+    <string name="txtMin">MIN</string>
+    <string name="welcomeMsg">Olá, Seja bem vindoª !</string>
+    <string name="listCrypto">Principais Criptomoedas:</string>
+    <string name="txtCustomerName">Nome do cliente</string>
+    <string name="txtCustomerBirthday">00/00/0000</string>
+    <string name="txtCustomerNameRegister">Nome</string>
+    <string name="txtCustomerEmail">email@gmail.com.br</string>
+    <string name="txtCustomerPhoneNumber">(99)9999-9999</string>
+    <string name="txtCustomerCpf">888.888.888-88</string>
+    <string name="txtCustomerBalance">R$200,00</string>
 </resources>

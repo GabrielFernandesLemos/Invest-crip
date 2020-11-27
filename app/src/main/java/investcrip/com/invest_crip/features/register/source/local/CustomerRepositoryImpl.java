@@ -14,16 +14,16 @@ public class CustomerRepositoryImpl implements CustomerRepository {
 
     @Override
     public boolean save(Customer customer) {
-        return false;
+        return dataSource.save(customer);
     }
 
     @Override
     public boolean delete(Customer customer) {
-        return false;
+        return dataSource.delete(customer);
     }
 
     @Override
     public List<Customer> getAll() {
-        return null;
+        return dataSource.getAll();
     }
 }

@@ -77,9 +77,9 @@ public class CustomerDAOImpl implements CustomerDAO {
 
     @Override
     public List<Customer> getAll() {
-        List<Customer> tarefas = new ArrayList<>();
+        List<Customer> customerList = new ArrayList<>();
 
-        String sql = "SELECT * FROM " + DbHelperCustomer.CUSTOMER_TABLE + ";";
+        String sql = "SELECT * FROM " + DbHelperCustomer.CUSTOMER_TABLE + " ;";
         Cursor c = read.rawQuery(sql, null);
 
         while ( c.moveToNext() ){
@@ -104,9 +104,9 @@ public class CustomerDAOImpl implements CustomerDAO {
 
 
 
-            tarefas.add( customer );
+            customerList.add( customer );
         }
 
-        return tarefas;
+        return customerList;
     }
 }

@@ -13,7 +13,7 @@
         android:background="@color/colorPrimary">
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/floatingActionButton2"
+            android:id="@+id/fabAddCustomer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
@@ -25,14 +25,14 @@
             app:srcCompat="@drawable/ic_check" />
 
         <EditText
-            android:id="@+id/txtName"
+            android:id="@+id/txtNameCustomer"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
             android:ems="10"
-            android:hint="Digite seu Nome"
+            android:hint="@string/typeName"
             android:inputType="textPersonName"
             android:textColor="#FFFFFF"
             android:textColorHint="@color/textSecondary"
@@ -41,84 +41,85 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
-            android:id="@+id/txtEmail"
+            android:id="@+id/txtEmailCustomer"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
             android:ems="10"
-            android:hint="Digite seu Email"
+            android:hint="@string/typeEmail"
             android:inputType="textEmailAddress"
             android:textColor="#FFFFFF"
             android:textColorHint="@color/textSecondary"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtName" />
+            app:layout_constraintTop_toBottomOf="@+id/txtNameCustomer" />
 
         <EditText
-            android:id="@+id/txtCpf"
+            android:id="@+id/txtCpfCustomer"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
             android:ems="10"
-            android:hint="Digite seu CPF"
+            android:hint="@string/typeCpf"
             android:inputType="textPersonName"
             android:textColor="#FFFFFF"
             android:textColorHint="@color/textSecondary"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtEmail" />
+            app:layout_constraintTop_toBottomOf="@+id/txtEmailCustomer" />
 
         <EditText
-            android:id="@+id/txtBithday"
+            android:id="@+id/txtBithdayCustomer"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
             android:ems="10"
-            android:hint="Selecione sua data de nascimento"
+            android:focusable="false"
+            android:hint="@string/typeBirthday"
             android:inputType="textPersonName"
             android:textColor="#FFFFFF"
             android:textColorHint="@color/textSecondary"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtCpf" />
+            app:layout_constraintTop_toBottomOf="@+id/txtCpfCustomer" />
 
         <EditText
-            android:id="@+id/txtPhoneNumber"
+            android:id="@+id/txtPhoneNumberCustomer"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
             android:ems="10"
-            android:hint="Digite seu número de telefone"
+            android:hint="@string/typePhoneNumber"
             android:inputType="phone"
             android:textColor="#FFFFFF"
             android:textColorHint="@color/textSecondary"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtBithday" />
+            app:layout_constraintTop_toBottomOf="@+id/txtBithdayCustomer" />
 
         <EditText
-            android:id="@+id/txtBalance"
+            android:id="@+id/txtBalanceCustomer"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
             android:ems="10"
-            android:hint="Digite o saldo da conta"
+            android:hint="@string/typeBalance"
             android:inputType="textPersonName"
             android:textColor="#FFFFFF"
             android:textColorHint="@color/textSecondary"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtPhoneNumber" />
+            app:layout_constraintTop_toBottomOf="@+id/txtPhoneNumberCustomer" />
 
         <ImageView
             android:id="@+id/imageView3"
@@ -131,7 +132,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtBalance"
+            app:layout_constraintTop_toBottomOf="@+id/txtBalanceCustomer"
             app:srcCompat="@drawable/logo" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

@@ -25,7 +25,7 @@ public class CustomerAdapter extends RecyclerView.Adapter<CustomerAdapter.Custom
     @Override
     public CustomerViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View itemList = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.list_client_adapter, parent, false);
+                .inflate(R.layout.list_register_adapter, parent, false);
 
         return new CustomerViewHolder(itemList);
     }
@@ -33,7 +33,13 @@ public class CustomerAdapter extends RecyclerView.Adapter<CustomerAdapter.Custom
     @Override
     public void onBindViewHolder(@NonNull CustomerViewHolder holder, int position) {
         Customer client = clientList.get(position);
-        holder.clientName.setText("Nome: " + client.getName());
+        holder.clientName.setText(client.getName());
+        holder.clientMail.setText(client.getEmail());
+        holder.clientCpf.setText(client.getCpf());
+        holder.clientBirthday.setText(client.getBirthday());
+        holder.clientPhoneNumber.setText(client.getPhoneNumber());
+        holder.clientBalance.setText(client.getBalance());
+
     }
 
     @Override
@@ -44,11 +50,22 @@ public class CustomerAdapter extends RecyclerView.Adapter<CustomerAdapter.Custom
     public static class CustomerViewHolder extends RecyclerView.ViewHolder {
 
         TextView clientName;
+        TextView clientMail;
+        TextView clientCpf;
+        TextView clientBirthday;
+        TextView clientPhoneNumber;
+        TextView clientBalance;
 
         public CustomerViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            clientName = itemView.findViewById(R.id.clientName);
+            clientName = itemView.findViewById(R.id.txtNameRegister);
+            clientMail = itemView.findViewById(R.id.txtEmailRegister);
+            clientCpf = itemView.findViewById(R.id.txtCpfRegister);
+            clientBirthday = itemView.findViewById(R.id.txtBirthdayRegister);
+            clientPhoneNumber = itemView.findViewById(R.id.txtPhoneNumberRegister);
+            clientBalance = itemView.findViewById(R.id.txtBalanceRegister);
+
         }
     }
 

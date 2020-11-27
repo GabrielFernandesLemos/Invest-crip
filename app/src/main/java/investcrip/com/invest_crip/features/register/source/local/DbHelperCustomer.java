@@ -21,7 +21,7 @@ public class DbHelperCustomer extends SQLiteOpenHelper {
                 " name TEXT NOT NULL, " +
                 " email TEXT NOT NULL, " +
                 " cpf TEXT NOT NULL, " +
-                " bithday TEXT NOT NULL, " +
+                " birthday TEXT NOT NULL, " +
                 " phoneNumber TEXT NOT NULL, " +
                 " balance TEXT NOT NULL ); ";
 

@@ -15,6 +15,6 @@
             android:id="@+id/clientName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Nome do cliente"/>
+            android:text="@string/txtCustomerName"/>
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
